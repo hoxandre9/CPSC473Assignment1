@@ -1,0 +1,278 @@
+/* Thanks for looking under the hood - Andre Ho */
+
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Passion+One');
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #FF6363;
+    padding: 30px;
+    text-align: center;
+}
+
+#top-navbar {
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+a.top-navbar-content {
+    /* text-decoration: none; */
+    color: white;
+
+}
+
+.logo {
+    padding: 10px;
+}
+
+.login {
+    float: right;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #FFF;
+    color: black;
+    font-family: nyt-franklin, Helvetica Neue, Arial, sans-serif;
+    height:62px;
+}
+
+#navbar ul {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 0px 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: transparent;
+    color: black;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: #ddd;
+    text-decoration: none;
+}
+
+#navbar a.active {
+    background-color: none;
+    color: black;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: black;
+    font-weight: bold;
+}
+
+.navbar-content{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.hero-content {
+    font-family: 'Passion One', cursive;
+    color: white;
+    font-size: 34px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.hero-sub-content {
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(254, 255, 116);
+
+}
+
+.hero-last-content {
+    color: white;
+    font-size: 30px;
+}
+
+.sub-header {
+    text-align: center;
+}
+
+.main,
+.more {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.col-15 {
+    flex: 1.5;
+    padding: 10px;
+}
+
+.col-3 {
+    flex: 3;
+}
+
+.blue {
+    background-color: #0080ff;
+}
+
+.dark-blue {
+    background-color: #00407f;
+}
+
+.grey {
+    background-color: #262626;
+}
+
+.card {
+
+    border-radius: 0.5em;
+    color: white;
+    padding: 1px 10px 10px 10px;
+
+}
+
+.btn-card {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #e7e7e7;
+    color: white;
+    padding: 10px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.badge {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0.5em;
+    padding: 4px;
+    font-size: small;
+
+}
+
+.disclaimer {
+    font-size: small;
+    color: grey;
+}
+
+.no-commitment {
+    font-size: small;
+    color: grey;
+    /* padding: 0px 250px 0px 250px; */
+}
+
+.light-grey {
+    background-color: #ededed;
+}
+
+.sub-card {
+    border-radius: 0.3em;
+    padding: 10px;
+}
+
+.collapsible {
+    background-color: transparent;
+    color: #3299ff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+
+.collapsible:hover {
+    background-color: transparent;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #3299ff;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+
+.collapsible.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.indent {
+    text-align: justify;
+    padding-left: 50px;
+}
+
+.btn-faq {
+    background-color: blue;
+    color: white;
+    width: 20%;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 0.5em;
+    margin-left: 25px;
+}
+
+.footer {
+    margin-top:20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2a2a2a;
+    color: white;
+    height: 100%;
+    padding: 50px;
+
+}
